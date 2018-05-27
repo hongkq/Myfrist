@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a666.myfrist.Heart.HeartActivity"
+    android:background="@drawable/heart">
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary" />
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/root"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="39dp"
+        android:text="结束"/>
+    <Button
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/close"
+        android:layout_marginRight="29dp"
+        android:layout_toLeftOf="@+id/close"
+        android:text="开始"/>
+    <TextView
+        android:id="@+id/heart_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/open"
+        android:layout_below="@+id/root"
+        android:layout_marginLeft="32dp" />
+    <TextView
+        android:id="@+id/tv_splash_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/heart_text"
+        android:layout_marginTop="10dp"
+        android:textColor="#A2A2A2"
+        android:shadowColor="#ffff00"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="请点击开始，再将你的手指放在摄像头下"
+        android:textSize="16sp"/>
+
+
+</RelativeLayout>
